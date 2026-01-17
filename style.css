@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --font-inter: 'Inter', sans-serif;
+    --font-worksans: 'Work Sans', sans-serif;
+    --dark01: #131313;
+    --dark02: #424242;
+    --dark03: #727272;
+    --light01: #FFFFFF;
+    --light02: #F5F5F5;
+    --primary: #FF900E;
+    --secondary: rgba(255, 144, 14, 0.1);
+    --footer: #FFF4E7;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+body {
+    font-family: var(--font-worksans);
+}
+.container {
+    width: 100%;
+    background-color: var(--secondary);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    text-align: center;
+    padding: 3.5rem 0;
+}
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 1.75rem;
+}
+.header-content h2 {
+    font-size: 3rem;
+    color: var(--dark01);
+    font-weight: 700;
+}
+.link {
+    text-decoration: none;
+    color: var(--dark02);
+    font-weight: 500;
+    font-size: 1.25rem;
+}

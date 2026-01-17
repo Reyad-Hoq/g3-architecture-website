@@ -2,14 +2,13 @@
 :root {
     --font-inter: 'Inter', sans-serif;
     --font-worksans: 'Work Sans', sans-serif;
-    --dark01: #131313;
-    --dark02: #424242;
-    --dark03: #727272;
-    --light01: #FFFFFF;
-    --light02: #F5F5F5;
-    --primary: #FF900E;
+    --dark01:    #131313;
+    --dark02:    #424242;
+    --dark03:    #727272;
+    --light01:   #FFFFFF;
+    --primary:   #FF900E;
     --secondary: rgba(255, 144, 14, 0.1);
-    --footer: #FFF4E7;
+    --footer:    #FFF4E7;
 }
 * {
     margin: 0;
@@ -23,12 +22,26 @@ html {
 body {
     font-family: var(--font-worksans);
 }
+/* shared styles */
+.flex {
+    display: flex;
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--light01);
+    border: none;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* header styles */
 .container {
     width: 100%;
     background-color: var(--secondary);
 }
 .header-content {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -37,19 +50,55 @@ body {
     text-align: center;
     padding: 3.5rem 0;
 }
-.nav-container ul {
-    list-style: none;
-    display: flex;
-    gap: 1.75rem;
-}
-.header-content h2 {
+.header-content h3 {
     font-size: 3rem;
     color: var(--dark01);
     font-weight: 700;
 }
+/* navbar related styles */
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.75rem;
+}
+
 .link {
     text-decoration: none;
     color: var(--dark02);
     font-weight: 500;
     font-size: 1.25rem;
+}
+/* banner styles */
+.banner {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-content {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--dark01);
+}
+.banner-details {
+    font-size: 1rem;
+    color: var(--dark03);
+    margin: 32px 0 32px;
+}
+.banner-image {
+    width: 100%;
+}
+/* media queries */
+@media screen and (max-width: 576px) {
+    .header-content, .navbar ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }

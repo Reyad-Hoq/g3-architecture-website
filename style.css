@@ -190,6 +190,10 @@ main,
         flex-direction: column;
         gap: 1.5rem;
     }
+    .banner-title,
+    .facts-title {
+        font-size: 2rem;
+    }
     .teams {
         flex-direction: column;
         gap: 2rem;
@@ -198,10 +202,24 @@ main,
         grid-template-columns: 1fr;
         margin: 0 auto;
     }
+    .team-img-container img {
+        width: 100%;
+    }
     .our-features {
         width: 100%;
         max-width: 340px;
         margin: 0 auto;
         text-align: center;
     }
+    .facts-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        justify-items: center;
+    }
+    .facts-title,
+    .facts-details {
+        width: 100%;
+        text-align: center;
+    }
+    
 }
